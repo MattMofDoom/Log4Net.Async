@@ -99,7 +99,7 @@
 
         protected void ForwardInternalError(string message, Exception exception, Type thisType)
         {
-            LogLog.Error(thisType, message, exception);
+            LogLog.Error(message, exception);
             var loggingEvent = loggingEventHelper.CreateLoggingEvent(Level.Error, message, exception);
             ForwardLoggingEvent(loggingEvent, thisType);
         }
@@ -112,7 +112,7 @@
             }
             catch (Exception exception)
             {
-                LogLog.Error(thisType, "Unable to forward logging event", exception);
+                LogLog.Error("Unable to forward logging event", exception);
             }
         }
 

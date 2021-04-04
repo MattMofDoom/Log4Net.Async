@@ -160,3 +160,5 @@ $RECYCLE.BIN/
 /src/*.suo
 
 /src/*.user
+/.vs
+/src/.vs/Log4Net.Async/v15/Server/sqlite3

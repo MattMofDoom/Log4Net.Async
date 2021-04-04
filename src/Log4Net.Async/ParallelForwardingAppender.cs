@@ -258,7 +258,7 @@
                             }
                             catch (Exception ex)
                             {
-                                LogLog.Error(ThisType, "Exception Completing Subscriber Task in Dispose Method", ex);
+                                LogLog.Error("Exception Completing Subscriber Task in Dispose Method", ex);
                             }
                         }
                         try
@@ -267,7 +267,7 @@
                         }
                         catch (Exception ex)
                         {
-                            LogLog.Error(ThisType, "Exception Disposing Logging Task", ex);
+                            LogLog.Error("Exception Disposing Logging Task", ex);
                         }
                         finally
                         {
@@ -282,7 +282,7 @@
                         }
                         catch (Exception ex)
                         {
-                            LogLog.Error(ThisType, "Exception Disposing BlockingCollection", ex);
+                            LogLog.Error("Exception Disposing BlockingCollection", ex);
                         }
                         finally
                         {
@@ -297,7 +297,7 @@
                         }
                         catch (Exception ex)
                         {
-                            LogLog.Error(ThisType, "Exception Disposing CancellationTokenSource", ex);
+                            LogLog.Error("Exception Disposing CancellationTokenSource", ex);
                         }
                         finally
                         {
